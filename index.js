@@ -27,7 +27,7 @@ let persons = [
 app.use(express.json())
 
 app.get('/api/persons', (request, response) => {
-    response.json(persons)
+    response.send("hi this is from modified version")
 })
 
 app.get('/info', (request, response) =>{
